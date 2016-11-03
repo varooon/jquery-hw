@@ -27,9 +27,13 @@ $(document).ready(function(){
     $("#animated-div").addClass("animate");
   });
 
-//When create-overlay button is clicked, display the overlay-div
+//When create-overlay button is clicked, "show" the overlay-div
   $("#create-overlay").on("click", function(){
-    $("#overlay-div").css("display", "block");
+    $("#overlay-div").show("slow");
+  });
+
+  $("#overlay-div").click(function(){
+    $("#overlay-div").hide(1000);
   });
 
 
