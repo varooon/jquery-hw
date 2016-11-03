@@ -27,12 +27,10 @@ $(document).ready(function(){
     $("#animated-div").addClass("animate");
   });
 
-
+//When create-overlay button is clicked, display the overlay-div
   $("#create-overlay").on("click", function(){
-    $("#container-id").html("<div class='overlay-border'></div>");
+    $("#overlay-div").css("display", "block");
   });
-
-
 
 
 });

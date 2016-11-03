@@ -24,15 +24,20 @@
   transition: all 1s ease-in-out;
 }
 
-#container-id{
+#inside-container{
   position: relative;
 }
 
-.overlay-border{
-  border: #000 1px solid;
+/*overlay-div is set to display:none by default.
+it will be activated in JS after button click
+*/
+#overlay-div{
+  width: 80%;
   height: 600px;
-  width: 600px;
-  position: absolute;
-  background: #ccc;
-  z-index: 0;
+  background-color: #CCC;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  opacity: 0.7;
+  text-align: center;
 }
